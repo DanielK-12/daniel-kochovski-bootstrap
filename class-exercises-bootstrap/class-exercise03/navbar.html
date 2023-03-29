@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <title>Navbar</title>
+</head>
+<style>
+  #intro {
+    background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%) !important;
+  }
+</style>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+    <div class="container-lg">
+      <!-- navbar brand/title -->
+      <a href="#" class="navbar-brand">
+        <span class="fw-bold text-secondary">SEDC</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#courses" class="nav-link">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- intro -->
+
+  <section id="intro">
+    <div class="container-lg pt-5 py-5">
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <h1 class="display-2">SEDC</h1>
+          <h3>Започни ја својата IT кариера</h3>
+          <p class="lead my-4 text-muted my-3">СЕДЦ ви овозможува за кратко време да стекнете потребни знаења,
+            благодарение
+            на посветени ментори со големо искуство, пракса и можност за вработување</p>
+          <a href="#courses" class="btn btn-success btn-lg">Дознај повеќе</a>
+        </div>
+        <div class="col-md-5">
+          <img src="../class-exercise03/src/img/duncan-adler-Got-SV5YRPg-unsplash.jpg" class="img-fluid rounded-4"
+            alt="slika">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #f9f9f9;" id="courses">
+    <div class="container-lg py-5">
+      <div class="row align-items-center justify-content-center g-0">
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Академија за FE</h4>
+              <p class="card-subtitle mb-3">Почеток 18ти Октомври</p>
+              <p class="card-text text-muted my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam,
+                molestiae dolor nemo quibusdam perferendis aliquam delectus quo nostrum quasi eius est, ipsa sit
+                architecto magni.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">Дознај повеќе</a>
+            </div>
+          </div><!--end of card #1-->
+        </div><!--end of first column-->
+        <div class="col-9 col-lg-4">
+          <div class="card border-primary border-2">
+            <card-header class="card-header text-center text-primary">УПИСИТЕ СЕ ВО ТЕК</card-header>
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Академија за Data science</h4>
+              <p class="card-subtitle mb-3">Почеток 10ти април</p>
+              <p class="card-text text-muted my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga
+                voluptatibus, laudantium velit blanditiis sapiente quidem, aperiam ipsam provident pariatur laborum
+                ipsum debitis cum accusantium.</p>
+              <a href="#" class="btn btn-primary btn-lg mt-3">Запиши се</a>
+            </div>
+          </div><!--end of card-#2-->
+        </div><!-- end of second column -->
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Академија за DevOps</h4>
+              <p class="card-subtitle mb-3">Почеток 20ти Ноември</p>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. At consequatur ipsum modi
+                eum culpa, aut aliquid hic repellat qui, dolores cum quod incidunt ducimus nostrum.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">Дознај повеќе</a>
+            </div>
+          </div><!--end of card #3-->
+        </div><!--end of third column-->
+      </div><!--end of row-->
+    </div><!--end of container-->
+  </section>
+  <!-- sign up modal -->
+  <section>
+    <div class="container">
+      <div class="text-center">
+        <h2>ПРИЈАВИ СЕ</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, repudiandae! Maiores, quis
+          nostrum! Hic, modi.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sign-up">Пријави се</button>
+      </div>
+    </div>
+  </section>
+  <!-- modal -->
+  <div id="sign-up" class="modal fade" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Започни го твоето IT Патување</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          <label for="email" class="form-label">Your email:<sup>*</sup></label>
+          <input type="text" name="email" id="email" class="form-control" placeholder="youremail@mail.com">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Пријави се</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- end of modal -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
