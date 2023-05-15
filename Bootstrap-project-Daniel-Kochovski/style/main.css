@@ -1,0 +1,100 @@
+body {
+  background-color: #191919;
+  height: 100vh;
+  font-family: 'poppins', sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
+
+.follow-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: rotate(90deg);
+  align-self: center;
+  justify-self: center;
+  width: 200px;
+  justify-content: space-around;
+}
+
+
+
+section a:hover {
+  transition: all 0.5s;
+  transform: scale(1.1) rotate(-90deg);
+}
+
+
+.navbar a:hover {
+  color: #E50914 !important;
+}
+
+.header-container {
+  max-width: 500px;
+}
+
+.second-section {
+  background-color: #141414;
+}
+
+.todays {
+  display: flex;
+  height: 100%;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #191919;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+    background-color: #191919;
+  }
+
+  .image-wrapper {
+    height: 15vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
