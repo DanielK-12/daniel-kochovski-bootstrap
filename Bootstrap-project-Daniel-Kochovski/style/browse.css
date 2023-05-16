@@ -1,0 +1,106 @@
+body {
+  font-family: 'poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #181c23
+}
+
+.hero {
+  max-width: 1000px;
+}
+
+.nk-gap,
+.nk-gap-1,
+.nk-gap-2,
+.nk-gap-3,
+.nk-gap-4,
+.nk-gap-5,
+.nk-gap-6 {
+  display: block;
+  height: 15px
+}
+
+.nk-widget-highlighted .nk-widget-content .nk-social-links-3 {
+  margin-top: -21px;
+  margin-right: -24px;
+  margin-bottom: -21px;
+  margin-left: -24px
+}
+
+.nk-contacts-icons {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-right: -20px;
+  list-style-type: none
+}
+
+
+
+
+
+.nk-feature-1,
+.nk-feature-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 15px;
+  background-color: #292e38;
+  border-radius: 4px
+}
+
+.nk-feature-1 .nk-feature-icon,
+.nk-feature-2 .nk-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 50px;
+  padding-right: 10px;
+  font-size: 3rem;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px
+}
+
+.nk-feature-1 .nk-feature-icon img,
+.nk-feature-2 .nk-feature-icon img {
+  max-width: 100%;
+  height: auto
+}
+
+.nk-feature-1 .nk-feature-cont,
+.nk-feature-2 .nk-feature-cont {
+  padding-top: 8px
+}
+
+.nk-feature-2 {
+  flex-direction: column
+}
+
+.nk-feature-2 .nk-feature-icon {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  border: 0
+}
+
+.nk-feature-2 .nk-feature-cont {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px
+}
+
+.nk-feature-title {
+  margin-bottom: .5rem;
+  font-size: 1.25rem
+}
+
+.nk-feature-title a {
+  color: inherit;
+  text-decoration: none
+}

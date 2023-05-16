@@ -15,9 +15,9 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5" data-bs-theme='dark'>
+  <nav class="container-fluid navbar navbar-expand-lg bg-body-tertiary mb-2" data-bs-theme='dark' id="main-page">
     <div class="container-fluid mx-5">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <h2>PixelHaven<span class="text-danger">.</span></h2>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#top">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Store</a>
@@ -47,8 +47,8 @@
 
           </li>
           <div class="container p-0 d-flex justify-content-start align-items-start">
-            <button class="btn btn-outline-danger btn-md mx-1">Log In</button>
-            <button class="btn btn-danger btn-md mx-1">Sign Up</button>
+            <a href="sign_up_login.html" class="btn btn-outline-danger btn-md mx-1">Log In</a>
+            <a href="#sign-up" class="btn btn-danger btn-md mx-1">Sign Up</a>
           </div>
         </ul>
       </div>
@@ -56,8 +56,8 @@
   </nav>
   <!-- navbar end -->
   <!-- start of section #1 -->
-  <section class="row py-5 d-flex justify-content-evenly">
-    <div class="col-lg-4 col-sm-12 me-5 d-flex align-items-center justify-content-between">
+  <section class="row container-fluid py-5 d-flex justify-content-evenly" id="top">
+    <div class="col-lg-6 col-sm-12 me-5 d-flex align-items-center justify-content-between">
       <div class="col-1 d-flex flex-column me-5 justify-content-between">
         <p class="text-light follow-us d-flex justify-content-between align-self-end">Follow us -
           <a href="https://www.twitch.tv/"><i class="bi bi-twitch text-light"></i></a>
@@ -66,18 +66,18 @@
           <a href="https://www.youtube.com"><i class="bi bi-youtube text-light"></i></a>
         </p>
       </div>
-      <div class="col-lg-11 col-sm-12 me-5 d-flex justify-content-center align-items-center">
-        <img src="img/juggernaut.jpg" class="img-fluid rounded-2" alt="dota">
+      <div class="container col-lg-11 col-sm-12 me-5 d-flex justify-content-center align-items-center overflow-hidden">
+        <img src="img/juggernaut640.jpg" class="object-fit-cover rounded-2" alt="dota">
       </div>
     </div>
-    <div class="col-lg-8 col-sm-12 header-container gy-5 pb-5 justify-content-center align-items-center">
+    <div class="col-lg-6 col-sm-12 header-container gy-5 pb-5 justify-content-center align-items-center">
       <h1 class="display 1 text-light my-5">PixelHaven<span class="text-danger">.</span> gaming shop</h1>
       <p class="text-light mb-5">Welcome to PixelHaven, the ultimate destination for all your gaming needs! Get ready
         to
         embark on an epic
         adventure filled with pixels, power-ups, and pure gaming bliss. Whether you're a seasoned gamer or just starting
         your virtual journey, our shop is here to make your gaming dreams come true.</p>
-      <button class="btn btn-outline-danger btn-md px-5 py-3">Jump in</button>
+      <a href="browse.html" class="btn btn-outline-danger btn-md px-5 py-3">Jump in</a>
     </div>
   </section>
   <!-- end of section #1 -->
@@ -104,7 +104,7 @@
             <div class="cards-wrapper">
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/storm.png" alt="storm" height="274px">
+                  <img src="img/storm.png" alt="storm" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">Storm Spirit</h5>
@@ -116,7 +116,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/mirana.jpg" alt="mirana" height="274px">
+                  <img src="img/mirana.jpg" alt="mirana" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">Mirana</h5>
@@ -128,7 +128,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/ember.png" alt="ember" height="274px">
+                  <img src="img/ember.png" alt="ember" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">Ember Spirit</h5>
@@ -144,7 +144,7 @@
             <div class="cards-wrapper">
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/axe.jpg" alt="axe" height="274px">
+                  <img src="img/axe.jpg" alt="axe" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">Axe</h5>
@@ -156,7 +156,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/invoker.jpg" alt="invoker" height="274px">
+                  <img src="img/invoker.jpg" alt="invoker" class="object-fit-cover">
                 </div>
                 <div class=" card-body rounded-2">
                   <h5 class="card-title text-light">Invoker</h5>
@@ -168,7 +168,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/sniper.png" alt="sniper" height="274px">
+                  <img src="img/sniper.png" alt="sniper" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">Sniper</h5>
@@ -184,7 +184,7 @@
             <div class="cards-wrapper">
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/SF.jpg" alt="SF" height="274px">
+                  <img src="img/SF.jpg" alt="SF" class="object-fit-cover">
                 </div>
                 <div class="card-body rounded-2">
                   <h5 class="card-title text-light">ShadowFiend</h5>
@@ -196,7 +196,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/arc-warden.jpg" alt="arc-warden" height="274px">
+                  <img src="img/arc-warden.jpg" alt="arc-warden" class="object-fit-cover">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title text-light">Arc Warden</h5>
@@ -208,7 +208,7 @@
               </div>
               <div class="card rounded-2">
                 <div class="image-wrapper">
-                  <img src="img/juggernaut.jpg" alt="juggernaut" height="274px">
+                  <img src="img/juggernaut.jpg" alt="juggernaut" class="object-fit-cover">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title text-light">Juggernaut</h5>
@@ -303,7 +303,11 @@
     <div class="container my-5">
       <img src="img/international.jpg" alt="international" class="img-fluid">
     </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <a href="#top" class="btn btn-outline-danger text-center"><i class="bi bi-arrow-up-circle"></i>Back to top</a>
+    </div>
   </section>
+
   <!-- end of section #3 -->
   <!-- footer -->
   <div class="text-light">

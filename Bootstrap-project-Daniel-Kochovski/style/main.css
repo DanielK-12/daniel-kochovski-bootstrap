@@ -1,9 +1,16 @@
+* {
+  scroll-behavior: smooth !important;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #191919;
   height: 100vh;
   font-family: 'poppins', sans-serif;
   padding: 0 !important;
   margin: 0 !important;
+  scroll-behavior: smooth !important;
 }
 
 
@@ -22,7 +29,7 @@ body {
 
 
 
-section a:hover {
+.follow-us a:hover {
   transition: all 0.5s;
   transform: scale(1.1) rotate(-90deg);
 }
@@ -31,10 +38,19 @@ section a:hover {
   position: sticky;
   z-index: 999;
   top: 0;
+  width: 100%;
+}
+
+.navbar h2:hover {
+  color: #DC4C64;
 }
 
 .navbar a:hover {
-  color: #E50914 !important;
+  color: #DC4C64 !important;
+}
+
+.navbar .active {
+  color: #DC4C64 !important;
 }
 
 .header-container {
