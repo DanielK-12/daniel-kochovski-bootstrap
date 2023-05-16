@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/main.css">
-
 </head>
 
 <body>
@@ -73,16 +72,16 @@
                     <div class="section text-center">
                       <h4 class="mb-4 pb-3">Log In</h4>
                       <div class="form-group">
-                        <input type="email" name="logemail" class="form-style transparent-input"
-                          placeholder="Your Email" id="logemail" autocomplete="off">
+                        <input type="email" name="logemail" class="form-style transparent-input proverka"
+                          placeholder="Your Email" id="logemail-front" autocomplete="off">
                         <i class="bi bi-at input-icon uil uil-at"></i>
                       </div>
                       <div class="form-group mt-2">
-                        <input type="password" name="logpass" class="form-style" placeholder="Your Password"
-                          id="logpass" autocomplete="off">
+                        <input type="password" name="logpass" class="form-style proverka" placeholder="Your Password"
+                          id="logpass-front" autocomplete="off">
                         <i class="bi bi-eye input-icon uil uil-lock-alt"></i>
                       </div>
-                      <button class="btn btn-outline-danger mt-4">Let me In</Button>
+                      <button class="btn btn-outline-danger mt-4" id="let-me-in-one">Let me In</Button>
                       <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
                     </div>
                   </div>
@@ -92,21 +91,21 @@
                     <div class="section text-center">
                       <h4 class="mb-4 pb-3">Sign Up</h4>
                       <div class="form-group">
-                        <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname"
-                          autocomplete="off">
+                        <input type="text" name="logname" class="form-style proverka" placeholder="Your Full Name"
+                          id="logname" autocomplete="off">
                         <i class="bi bi-person input-icon uil uil-user"></i>
                       </div>
                       <div class="form-group mt-2">
-                        <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail"
-                          autocomplete="off">
+                        <input type="email" name="logemail" class="form-style proverka" placeholder="Your Email"
+                          id="logemail-back" autocomplete="off">
                         <i class="bi bi-envelope-at input-icon uil uil-at"></i>
                       </div>
                       <div class="form-group mt-2">
-                        <input type="password" name="logpass" class="form-style" placeholder="Your Password"
-                          id="logpass" autocomplete="off">
+                        <input type="password" name="logpass-back" class="form-style proverka"
+                          placeholder="Your Password" id="logpass" autocomplete="off">
                         <i class="bi bi-eye input-icon uil uil-lock-alt"></i>
                       </div>
-                      <button class="btn btn-outline-danger mt-4">Let me In</button>
+                      <button class="btn btn-outline-danger mt-4" id="let-me-in-two">Let me In</button>
                     </div>
                   </div>
                 </div>
@@ -182,11 +181,13 @@
     </footer>
   </div>
 
-
+  <audio src="sounds/wait-for-it.mp3" id="error"></audio>
+  <audio src="sounds/dota-2-game-ready-sound-youtube1.mp3" id="success"></audio>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script src="app/app.js"></script>
 </body>
 
 </html>
