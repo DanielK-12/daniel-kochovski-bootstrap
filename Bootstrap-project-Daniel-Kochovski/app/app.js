@@ -24,5 +24,3 @@ document.getElementById('let-me-in-two').addEventListener('click', function () {
     audioSuccess.play();
   }
 });
-
-
