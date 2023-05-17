@@ -1,10 +1,13 @@
 
-const audioSuccess = new Audio("https://www.fesliyanstudios.com/play-mp3/5744");
-const audioError = new Audio("https://www.fesliyanstudios.com/play-mp3/5744");
+const audioSuccess = new Audio("");
+audioSuccess.src = 'sounds/dota-2-game-ready-sound-youtube1.mp3';
+const audioError = new Audio("");
+audioError.src = 'sounds/wait-for-it.mp3';
+
+let proverka = document.getElementById("proverka");
 
 document.getElementById('let-me-in-one').addEventListener('click', function () {
-  let proverka = document.querySelectorAll("proverka").length;
-  if (proverka.length == 0) {
+  if (proverka.value.length < 1) {
     audioError.play();
   } else {
     audioSuccess.play();
@@ -12,9 +15,10 @@ document.getElementById('let-me-in-one').addEventListener('click', function () {
 });
 
 
+let proverkaTwo = document.getElementById("proverka-two");
+
 document.getElementById('let-me-in-two').addEventListener('click', function () {
-  let proverka = document.querySelectorAll("proverka").length;
-  if (proverka.length == 0) {
+  if (proverkaTwo.value.length < 1) {
     audioError.play();
   } else {
     audioSuccess.play();
