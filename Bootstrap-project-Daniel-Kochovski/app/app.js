@@ -1,8 +1,8 @@
 
 const audioSuccess = new Audio("");
-audioSuccess.src = 'sounds/dota-2-game-ready-sound-youtube1.mp3';
+audioSuccess.src = 'sounds/Vo_monkey_king.mpeg';
 const audioError = new Audio("");
-audioError.src = 'sounds/wait-for-it.mp3';
+audioError.src = 'sounds/Vo_tusk_tusk_rival_19.mpeg';
 
 let proverka = document.getElementById("proverka");
 

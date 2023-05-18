@@ -1,0 +1,8 @@
+ .image-container {
+   display: flex;
+   align-self: center;
+   justify-self: center;
+   max-width: 1200px;
+   align-items: end;
+   justify-content: end;
+ }
